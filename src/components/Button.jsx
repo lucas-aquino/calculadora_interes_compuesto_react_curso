@@ -7,13 +7,14 @@ const Button = styled.button`
   border: 2px solid #6366f1;
   font-size: 1em;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   font-weight: bold;
   border-radius: 10px;
   padding: 15px 14px;
   width: 100%;
   margin: 15px 0px;
   transition: transform 0.2s;
+  font-family: 'Barlow', sans-serif;
   
   &:hover {
     background-color: #818cf8;

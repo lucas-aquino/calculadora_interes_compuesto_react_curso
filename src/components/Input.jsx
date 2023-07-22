@@ -14,6 +14,7 @@ const Label = styled.label`
   margin-bottom: 10px;
 `
 
+
 const TextField = styled.input.attrs({
   type: 'text'
 })`
@@ -29,9 +30,10 @@ const TextField = styled.input.attrs({
 
   color: #cbd5e1;
 
+  
+
   &:focus {
     outline: 3px solid #6366f1;
-
   }
 `
 
@@ -49,7 +51,7 @@ const Input = ({ label, ...props}) => {
       <Label>{label}</Label>
       <TextField { ...field } { ...props }></TextField>
       {meta.touched && meta.error ? (
-        <ErrorMessage>Hola</ErrorMessage>
+        <ErrorMessage>{meta.error}</ErrorMessage>
       ) : null }
     </Control>
   )
