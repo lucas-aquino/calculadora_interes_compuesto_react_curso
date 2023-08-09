@@ -6,15 +6,15 @@ const Contenedor = styled.div`
   background-color: #334155;
   border-radius: 10px;
   padding: 10px 0px;
-  user-select: none;
 `
-
+  
 const Label = styled(Titulo)`
   text-align: center;
   margin-bottom: 0px;
   font-size: 2.6rem;
   margin-top: 0px;
   color: #e2e8f0;
+  user-select: none;
 `
 
 const NumberBalance = styled.div`
@@ -23,14 +23,20 @@ const NumberBalance = styled.div`
   font-family: 'Unica One', cursive;
   text-align: center;
   color: #4ade80;
+
+  &::selection {
+    background-color: #4ade80;
+    color: #e2e8f0;
+    border-radius: 10px;
+  }
 `
 
 
-const BalanceTotal = ({ balance }) => {
+const BalanceTotal = ({ valor }) => {
   return (
     <Contenedor>
       <Label>Balance</Label>
-      <NumberBalance>{balance}</NumberBalance>
+      <NumberBalance>{ valor }</NumberBalance>
     </Contenedor>
   )
 }

@@ -6,6 +6,7 @@ const Titulo = styled.h1`
   font-size: 3.1rem;
   font-weight: bold;  
   font-family: 'Barlow', sans-serif;
+  user-select: none;
 `
 
 export default Titulo
